@@ -1,18 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Registration Form</title>
     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
 
+     <div class="header">
+      <h5>Student</h5>
+     </div>
 
+     <div class="uppar-btn-box">
+      <div class="left-box">
+        <button style="background-color: blue; color: white;"><i class="fa fa-plus"></i>Add Student</button>
+        <button><i class="fa fa-eraser"></i>Clear All Data</button>
+      </div>
+      <div class="right-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="StudentID" placeholder="Enter StudentID">
+        <button>Search</button>
+      </div>
+     </div>
 
+     <div class="table-box">
+      <table>
+        <tr>
+          <th style="border-left: 1px solid #ccc;">No</th>
+          <th>Upload std photo</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone numbe</th>
+          <th>Birthdate</th>
+          <th>Appointment time</th>
+          <th>Favorite colo</th>
+          <th>Payment method</th>
+          <th>Age</th>
+          <th>Checkbox options </th>
+          <th>Action</th>
+        </tr>
+        
+        <tr>
+          <td>1</td>
+          <td>.......</td>
+          <td>Bhautik bariya</td>
+          <td>bhautik@gmail.com</td>
+          <td>6355440837</td>
+          <td>24/12/2003</td>
+          <td>12.00 pm</td>
+          <td>Blue</td>
+          <td>cash</td>
+          <td>19</td>
+          <td>no</td>
+          <td>
+            <button><i class="fa fa-edit"></i></button>
+            <button><i class="fa fa-trash"></i></button>
+          </td>
+        </tr>
+      </table>
+     </div>
 
-    <script src="./script.js"></script>
-</body>
-</html>
+     <script src="./script.js"></script>
+  </body>
+  </html>

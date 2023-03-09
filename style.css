@@ -1,0 +1,97 @@
+/* start up  */
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* header porson css */
+
+.header{
+  width: 100%;
+  padding: 2% 43.5%;
+  background-color: rgb(0, 228, 0);
+}
+.header h5{
+  color: coral;
+  font-weight: bold;
+  font-size: 75px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+/* thats a uppar-btn-box for a button */
+
+.uppar-btn-box{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 30px;
+}
+
+.uppar-btn-box .left-box{
+  width: 50%;
+  height: 100%;
+}
+
+.uppar-btn-box .left-box button{
+  border: none;
+  outline: none;
+  background-color: cyan;
+  padding: 15px;
+  font-size: 35px;
+  font-family: cursive;
+  color: black;
+  margin: 10px 20px;
+}
+
+.uppar-btn-box .right-box{
+  width: 50%;
+  height: 100%;
+} 
+
+.uppar-btn-box .right-box i{
+  font-size: 40px;
+}
+
+.uppar-btn-box .right-box input{
+  width: 75%;
+  padding: 19px;
+  outline: none;
+  border: none;
+  border-bottom: 5px solid rgb(1, 247, 132);
+  margin: 10px 0px;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+}
+.uppar-btn-box .right-box button{
+  border: none;
+  outline: none;
+  background-color: rgb(255, 238, 0);
+  padding: 15px;
+  font-size: 30px;
+  font-family: cursive;
+  color: black;
+  margin: 0px 12.5px;
+}
+
+/* start a local data base tabal */
+
+.table-box{
+  width: 100%;
+  padding: 2%;
+  margin: 100px 0px;
+}
+
+.table-box table{
+  width: 100%;
+}
+
+.table-box table tr th{
+  border-right: 1px solid #ccc;
+  padding: 20px 20px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
