@@ -30,6 +30,10 @@ function Submit() {
 // Retrieve data
 function retrieveData() {
   var name1 = document.getElementById("name").value;
+  if(name1 == ""){
+    alert("jjjjjjjjjj");
+    return false;
+  }
   var email = document.getElementById("email").value;
   var phoneno = document.getElementById("phoneno").value;
   var BOD = document.getElementById("BOD").value;
@@ -153,101 +157,8 @@ function remove(td) {
   }
 }
 
-
-
-
-
-
-// start the form 
-
-// var addBtn = document.querySelector("#add-btn");
-// var modal = document.querySelector(".modal");
-// var closeBtn = document.querySelector(".close-btn");
- 
-// addBtn.onclick = function() {
-//      modal.classList.add("active");
-//  };
-// closeBtn.addEventListener("click",()=> {
-//     modal.classList.remove("active");
-// })
-
-
-// // start global var
-// var userData =[];
-// var NameEl =document.getElementById("#Name");
-// var EmailEl =document.getElementById("#Email");
-// var PhonenumberEl =document.getElementById("#Phonenumber");
-// var BirthdateEl  =document.getElementById("#Birthdate ");
-// var AppointmenttimeEl =document.getElementById("#Appointmenttime");
-// var FavoritecolorEl =document.getElementById("#Favoritecolor");
-// var AgeEl =document.getElementById("#Age");
-// var registerBtn = document.querySelector("#Register-btn");
-// var registerform = document.querySelector("Register-form");
-
-// registerBtn.onclick = function(e){
-//     e.preventDefault();
-//     regitrationData();
-//     getDataformlocal();
-//     registerform.requestFullscreen('');
-//     closeBtn.click();
-// }
-
-// // userData = JSON.parse(localStorage.getItem("userData"));
-// // console.log(userData);
-
-// if(localStorage.getItem("userData") !=null){
-//     userData = JSON.parse(localStorage.getItem("userData"));
-// }
-
-// function regitrationData(){
-//     userData.push({
-//       Name : NameEl.Value,
-//       Email :EmailEl.Value,
-//       Phonenumber: PhonenumberEl.Value,
-//       Birthdate : BirthdateEl.Value,
-//       Appointmenttime: AppointmenttimeEl.Value,
-//       Favoritecolor  : FavoritecolorEl.Value,
-//       Age : AgeEl.Value,  
-//     });
-//     var userString = JSON.stringify(userData);
-//     localStorage.setItem("userData",userString);
-// }
-
-// // start returning data on local store
-
-// var tableData =document.querySelector("#table-data")
-
-// const getDataformlocal = () => {
-//     tableData.innerHTML = "";
-//     userData.forEach((data ,index) => {
-//         tableData.innerHTML += `
-        
-//         <tr>
-//         <td style="border-left: 1px solid #ccc;">1</td>
-//         <td>.......</td>
-//         <td>Bhautik bariya</td>
-//         <td>bhautik@gmail.com</td>
-//         <td>6355440837</td>
-//         <td>24/12/2003</td>
-//         <td>12.00 pm</td>
-//         <td>Blue</td>
-//         <td>cash</td>
-//         <td>19</td>
-//         <td>no</td>
-//         <td>
-//           <button style="background-color: blue; color: white;" ><i class="fa fa-edit"></i></button>
-//           <button><i class="fa fa-trash"></i></button>
-//         </td>
-//       </tr>
-
-//         `;
-//     })
-// }
-
-// getDataformlocal();
-
-
-
-
+function formvalidation(){
+  
+}
 
 

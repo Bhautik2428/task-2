@@ -13,16 +13,14 @@
       <legend>
         <h2>Form</h2>
       </legend>
-      <form id="form">
-        <input type="text" id="name" name="name" placeholder="Name"><br><br>
-        <input type="text" id="email" name="email" placeholder="email"><br><br>
-        <input type="text" id="phoneno" name="phoneno" placeholder="phoneno"><br><br>
-        <input type="date" id="BOD" name="BOD" placeholder="BOD"><br><br>
-        <input type="time" id="appointment" name="appointment" placeholder="appointment"><br><br>
-        <input type="color" id="color" name="color" placeholder="color"><br><br>
-
-        
-        <input type="radio" id="Online" name="Online" value="Online">
+      <form id="form" onsubmit="formvalidation()">
+       Name  <input type="text" id="name" name="name" placeholder="Name"><br><br>
+        Email<input type="text" id="email" name="email" placeholder="email"><br><br>
+       No <input type="text" id="phoneno" name="phoneno" placeholder="phoneno"><br><br>
+       Date <input type="date" id="BOD" name="BOD" placeholder="BOD"><br><br>
+       Time <input type="time" id="appointment" name="appointment" placeholder="appointment"><br><br>
+       Color <input type="color" id="color" name="color" placeholder="color"><br><br>
+       Payment <input type="radio" id="Online" name="Online" value="Online">
         <label for="Online">Online</label> <br><br>
 
 
@@ -70,199 +68,7 @@
     </fieldset>
   
   
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
-
-
-
-<!-- 
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-
-    <div class="header">
-      <h5>Employe</h5>
-    </div>
-    
-    <div class="upper-btn-box">
-      <div class="left-box">
-        <button id="addbtn" onclick="addBtn"><i class="fa fa-plus"></i> &nbsp; Add Employe</button>
-        <button style="background-color: #33b5e6;"><i class="fa fa-eraser"></i> &nbsp; Clear All Data</button>
-      </div>
-      <div class="right-box">
-        <i class="fa fa-search"></i>
-        <input type="text" id="empId" placeholder="Enter StudentID">
-        <button style="background-color: #EE534F;">Search</button>
-      </div>
-    </div>
-
-    <div class="table-box">
-      <table id="table-data">
-
-        <tr>
-          <th>No</th>
-          <th>Upload std photo</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone numbe</th>
-          <th>Birthdate</th>
-          <th>Appointment time</th>
-          <th>Favorite colo</th>
-          <th>Payment method</th>
-          <th>Age</th>
-          <th>Checkbox options </th>
-          <th>Action</th>
-        </tr>
- 
-        <tr>
-          <td style="border-left: 1px solid #ccc;">1</td>
-          <td>.......</td>
-          <td>Bhautik bariya</td>
-          <td>bhautik@gmail.com</td>
-          <td>6355440837</td>
-          <td>24/12/2003</td>
-          <td>12.00 pm</td>
-          <td>Blue</td>
-          <td>cash</td>
-          <td>19</td>
-          <td>no</td>
-          <td>
-            <button style="background-color: blue; color: white;" ><i class="fa fa-edit"></i></button>
-            <button><i class="fa fa-trash"></i></button>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="border-left: 1px solid #ccc;">1</td>
-          <td>.......</td>
-          <td>Bhautik bariya</td>
-          <td>bhautik@gmail.com</td>
-          <td>6355440837</td>
-          <td>24/12/2003</td>
-          <td>12.00 pm</td>
-          <td>Blue</td>
-          <td>cash</td>
-          <td>19</td>
-          <td>no</td>
-          <td>
-            <button style="background-color: blue; color: white;" ><i class="fa fa-edit"></i></button>
-            <button><i class="fa fa-trash"></i></button>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="border-left: 1px solid #ccc;">1</td>
-          <td>.......</td>
-          <td>Bhautik bariya</td>
-          <td>bhautik@gmail.com</td>
-          <td>6355440837</td>
-          <td>24/12/2003</td>
-          <td>12.00 pm</td>
-          <td>Blue</td>
-          <td>cash</td>
-          <td>19</td>
-          <td>no</td>
-          <td>
-            <button style="background-color: blue; color: white;" ><i class="fa fa-edit"></i></button>
-            <button><i class="fa fa-trash"></i></button>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="border-left: 1px solid #ccc;">1</td>
-          <td>.......</td>
-          <td>Bhautik bariya</td>
-          <td>bhautik@gmail.com</td>
-          <td>6355440837</td>
-          <td>24/12/2003</td>
-          <td>12.00 pm</td>
-          <td>Blue</td>
-          <td>cash</td>
-          <td>19</td>
-          <td>no</td>
-          <td>
-            <button style="background-color: blue; color: white;" ><i class="fa fa-edit"></i></button>
-            <button><i class="fa fa-trash"></i></button>
-          </td>
-        </tr>
-        
-      </table>
-     </div>
-
-    <div class="modal active">
-      <i class="fa fa-times-circle close-icon"></i>
-      <div class="left-modal">
-        <div class="img-box">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTVbI7kRNTTe5qcCXAF-khW29tP-pZKXQoPnPwHnFqMAI5dcwAK5-MRD5um4Lo_YHk5Uw&usqp=CAU" width="150" height="150" alt="">
-          <i class="fa fa-plus-circle"></i>
-          <input type="file">
-        </div>
-      </div>
-
-      <div class="right-modal">
-
-        <div class="input-box">
-          <label for="name">name</label>
-          <input type="text" id="name">
-        </div>
-        <div class="input-box">
-          <label for="email">email</label>
-          <input type="email" id="email">
-        </div>
-        <div class="input-box">
-          <label for="p-no">Phone no</label>
-          <input type="text" id="pno" maxlength="10">
-        </div>
-        <div class="input-box">
-          <label for="birthdate">Birthdate</label>
-          <input type="date" id="birthdate">
-        </div>
-        <div class="input-box">
-          <label for="atime">Appointment time</label>
-          <input type="time" id="atime">
-        </div>
-        <div class="input-box">
-          <label for="color">Favorite color</label>
-          <input type="color" id="color">
-        </div>
-        <div class="input-box" >
-          <label for="pay">Payment method</label>
-          <input type="radio" id="age1" name="age" value="30"  style="margin: 20px 20px; margin-left: 100px;" >
-          <label for="age1">Case</label><br>
-          <input type="radio" id="age2" name="age" value="60"  style="margin: 20px 20px;">
-          <label for="age2">Online</label><br>  
-        </div>
-        <div class="input-box">
-          <label for="age">Age</label>
-          <input type="text" id="age" maxlength="2">
-        </div>
-        <div class="input-box">
-          <label for="checkbox">Checkbox options</label>
-          <input type="checkbox" id="checkbox">
-        </div>
-        <div class="input-box">
-          <button>Register</button>
-          <button>Update</button>
-        </div>
-      </div>
-
-    </div>
-    <script src="./script.js">
-      var addBtn = document.querySelector("#add-btn");
-      var modal = document.querySelector(".modal");
-      addBtn.onclick = function() {
-        modal.classList.add("active"); 
-      }
-    </script>
-  </body>
-  </html> -->
